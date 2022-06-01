@@ -1,7 +1,9 @@
-import time
 products = []
+newABs = []
 with open('addProduct.txt') as f:
     products = f.readlines()
+with open('addABPackage.txt') as d:
+    newABs = d.readlines()
 # Listed by Name, sku, length, width, height, weight
 #ABpackages are divided by A and B parts of a package
 ABpackages= [['Davislegend 12U 19in Wall Mount server network equipment Data Cabinet Rack','SWC-PKST-01-12U645-CBK','27','19','5','19'],
@@ -22,7 +24,14 @@ sku = [['DavisLegend 6U 19in Wall Mount server network equipment Data Cabinet Ra
 ]
 for product in products:
     item = product.split(',')
-    if(len(item[5])>1):
+    if( len(item[5]) > 1):
         if(item[5][len(item[5])-1:] == '\n'):
             item[5] = item[5][:len(item[5])-1]
     sku.append(item)
+for newAB in newABs:
+    item = newAB.split(',')
+    if (len(item[5]) > 1):
+        if( item[5][len(item[5])-1:] == '\n'):
+            item[5] = item[5][:len(item[5])-1]
+    ABpackages.append(item)
+print(ABpackages)
