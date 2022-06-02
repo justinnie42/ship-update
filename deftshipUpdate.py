@@ -1,10 +1,8 @@
 from hashlib import new
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import time
 from measurements import ABpackages,sku
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -20,7 +18,7 @@ passwordS1 = 'Diehl2580!'
 usernameS2 = 'sales@platintl.com'
 passwordS2 = 'Diehl2580d!'
 
-#Sign in to Ebay and 2 Shippo
+#Sign in to Ebay and Shippo
 driver.get(url)
 driver.switch_to.new_window('tab')
 
@@ -36,13 +34,13 @@ logIn.click()
 driver.switch_to.window(driver.window_handles[0])
 shippoWindow = 1
 
+# Gives 100 seconds to do Captcha, logs in to Ebay after Captcha is complete
 try:
     captcha = WebDriverWait(driver, 100).until(
         EC.presence_of_element_located((By.ID, 'userid'))
     )
 finally:
     driver.quit
-# Time to do the captcha
 driver.switch_to.window(driver.window_handles[0])
 username = driver.find_element(By.ID,'userid')
 username.send_keys(usernameStr)
@@ -64,7 +62,7 @@ orders = [elem.get_attribute('href') for elem in elems]
 if len(orders) > 0:
     print(orders[0])
 
-#driver.find_element(By.ID, 'gh-la').send_keys(Keys.CONTROL + 't')
+# Log in to Deftship
 driver.execute_script("window.open('');")
 shippoWindow += 1
 driver.switch_to.window(driver.window_handles[1])
@@ -80,6 +78,7 @@ time.sleep(2)
 #Add loop for every item
 currentWindow = 1
 for order in orders:
+    # Scrapes buyer information from Ebay
     driver.execute_script('''window.open("http://bings.com","_blank");''')
     driver.switch_to.window(driver.window_handles[currentWindow+1])
     shippoWindow += 1
@@ -91,6 +90,7 @@ for order in orders:
     print(item)
     orderNum = driver.find_element(By.CLASS_NAME,'order-details-title').get_attribute('innerText')
     orderNum = orderNum[13:]
+    skuInfo = driver.find_element(By.CSS_SELECTOR, '.item-custom-sku-pair > span:nth-child(2)').get_attribute('innerText')
     print(orderNum)
     quantity = driver.find_element(By.CSS_SELECTOR, 'td.quantity > span:nth-child(1)').get_attribute('innerText')
     print(quantity)
@@ -118,10 +118,9 @@ for order in orders:
 
 
     # Enter Shipping Information
-    
-    if len(driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)'))>0:
-        newShipment = driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)')
-        newShipment.click()
+    # if len(driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)'))>0:
+    #     newShipment = driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)')
+    #     newShipment.click()
     shipName = driver.find_element(By.CSS_SELECTOR,'#receiver-name > div > div > div.flex.flex-grow.items-stretch.focus-within\:z-10 > input')
     shipName.send_keys(name)
     shipAttention = driver.find_element(By.ID, 'attention')
@@ -151,12 +150,12 @@ for order in orders:
     i = 0
     while(i < int(quantity)):
         for package in range(len(ABpackages)-1):
-            if item.__contains__(ABpackages[package][0]):
+            if item.__contains__(ABpackages[package][0]) or skuInfo.__contains__(ABpackages[package][1]):
                 currentItem = ABpackages[package]
                 packageB = ABpackages[package+1]
                 break
         for package in sku:
-            if item.__contains__(package[0]):
+            if item.__contains__(package[0]) or skuInfo.__contains__(package[1]):
                 currentItem = package
                 break
         print(currentItem)
@@ -176,6 +175,7 @@ for order in orders:
         descript.send_keys(currentItem[1])
         skuPackage = driver.find_element(By.ID, 'sku_' + str(i) + '_0')
         skuPackage.send_keys(currentItem[1])
+        # Enters information for B package if the package is AB
         if packageB[0] != "":
             i += 1
             newPackage = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/main/div/form/div/div[2]/div[3]/div[2]/div[2]/div/a')
@@ -200,6 +200,7 @@ for order in orders:
             newPackage.click()
     driver.switch_to.window(driver.window_handles[currentWindow+1])
     currentWindow += 1
+    # If there are more orders, opens a new tab
     if order != orders[len(orders)-1]:
         driver.switch_to.window(driver.window_handles[currentWindow])
         driver.get('https://v2.deftship.com/login')

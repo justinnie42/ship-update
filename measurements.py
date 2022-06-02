@@ -5,7 +5,7 @@ with open('addProduct.txt') as f:
 with open('addABPackage.txt') as d:
     newABs = d.readlines()
 # Listed by Name, sku, length, width, height, weight
-#ABpackages are divided by A and B parts of a package
+# ABpackages are divided by A and B parts of a package
 ABpackages= [['Davislegend 12U 19in Wall Mount server network equipment Data Cabinet Rack','SWC-PKST-01-12U645-CBK','27','19','5','19'],
 ['Davislegend 12U 19in Wall Mount server network equipment Data Cabinet Rack','SWC-PKST-01-12U645-CBK','30','25','5','46'],
 ['45U 2 Post Open frame Rack 7Ft 19inch wide Steel Tap with free top cable tray','SRK-PKST-0602-45U514-CH-CBK','23','9','5','32'],
@@ -36,11 +36,6 @@ for newAB in newABs:
     if (len(item[5]) > 1):
         if( item[5][len(item[5])-1:] == '\n'):
             item[5] = item[5][:len(item[5])-1]
-    # for dimension in range(len(item)-1):
-    #     if(item[dimension][0] == " "):
-    #         item[dimension] = item[dimension][1:]
-    #     if(item[dimension][len(item[dimension])-1] == " "):
-    #         item[dimension] = item[:len(item[dimension])-1]
     for detail in range(len(item)-1):
         item[detail] = item[detail].strip()
     ABpackages.append(item)

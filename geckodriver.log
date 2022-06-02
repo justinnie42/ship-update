@@ -6521,3 +6521,141 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1654198660125	geckodriver	INFO	Listening on 127.0.0.1:51817
+1654198663140	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51818" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileVHI3Ky"
+1654198663604	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:51818
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileVHI3Ky\\search.json.mozlz4", (void 0)))
+1654198666337	Marionette	INFO	Listening on port 51857
+DevTools listening on ws://localhost:51818/devtools/browser/cf48e86e-a496-4554-9d3f-87dd68df481d
+Read port: 51857
+1654198666426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://apps.goshippo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://d35u1vg1q28b3w.cloudfront.net/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1654198725602	Marionette	INFO	Stopped listening on port 51857
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1654198763573	geckodriver	INFO	Listening on 127.0.0.1:52003
+1654198766611	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52004" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileJtgXaR"
+1654198767055	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:52004
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileJtgXaR\\search.json.mozlz4", (void 0)))
+1654198769720	Marionette	INFO	Listening on port 52037
+DevTools listening on ws://localhost:52004/devtools/browser/e9ec1a99-b0c1-4715-afee-f5652243c3dc
+Read port: 52037
+1654198769801	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://apps.goshippo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1654199001138	Marionette	INFO	Stopped listening on port 52037
+1654202500309	geckodriver	INFO	Listening on 127.0.0.1:54631
+1654202503314	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54632" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilee5mwbK"
+1654202504023	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54632
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilee5mwbK\\search.json.mozlz4", (void 0)))
+1654202506635	Marionette	INFO	Listening on port 54660
+DevTools listening on ws://localhost:54632/devtools/browser/9372443d-546c-4927-bd94-204071df515b
+Read port: 54660
+1654202506722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://apps.goshippo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://src.ebay-us.com/maTkNvBv9UUyXhMh?5d44c1b13a3e0881=LEkQOowF8DA_PsN5XT2EnE5LOJsx-86bRGfzU6J9L-9iwS_kWk2bhYecJcH5IiEkgklwul1l_DSg55KsWIVWzI0AT0z-go-sOR_8ePXlkLVxLkCCn9WOWFu_P1gdaTkHP6-Lh9bZClsvjcykJR0mU2auXxheX_IZcpQCCpbSvUzSCGf-dU3onRzwgCmwrP46wXiNMmgNNk79YLMVxgk356g&jb=34332424687b67753d5f696e646d7571266a71673d576b6e666d75712532303132246871607d3546697a65666f7a246873623f4e697267666d7a273030313031, line 568: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654202530245	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://src.ebay-us.com/maTkNvBv9UUyXhMh?5d44c1b13a3e0881=LEkQOowF8DA_PsN5XT2EnE5LOJsx-86bRGfzU6J9L-9iwS_kWk2bhYecJcH5IiEkgklwul1l_DSg55KsWIVWzI0AT0z-go-sOR_8ePXlkLVxLkCCn9WOWFu_P1gdaTkHP6-Lh9bZClsvjcykJR0mU2auXxheX_IZcpQCCpbSvUzSCGf-dU3onRzwgCmwrP46wXiNMmgNNk79YLMVxgk356g&jb=34332424687b67753d5f696e646d7571266a71673d576b6e666d75712532303132246871607d3546697a65666f7a246873623f4e697267666d7a273030313031, line 568: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://s3.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://s3.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://s3.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1654203293157	Marionette	INFO	Stopped listening on port 54660
+ser\\AppData\\Local\\Temp\\rust_mozprofiler1dXt9"
+1654203231633	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:55074
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofiler1dXt9\\search.json.mozlz4", (void 0)))
+1654203234308	Marionette	INFO	Listening on port 55103
+DevTools listening on ws://localhost:55074/devtools/browser/7f077b54-5370-4a5c-8d7e-2a2ccaa36735
+Read port: 55103
+1654203234428	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://apps.goshippo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
