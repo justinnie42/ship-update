@@ -1,9 +1,12 @@
+from hashlib import new
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 from measurements import ABpackages,sku
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 driver = webdriver.Firefox()
@@ -19,43 +22,51 @@ passwordS2 = 'Diehl2580d!'
 
 #Sign in to Ebay and 2 Shippo
 driver.get(url)
-# driver.switch_to.new_window('tab')
+driver.switch_to.new_window('tab')
 
 # Log In to Shippo 1
-# ActionChains(driver).key_down(Keys.CONTROL).send_keys('t').key_up(Keys.CONTROL).perform()
-# driver.get('https://apps.goshippo.com/login')
-# email = driver.find_element(By.CSS_SELECTOR, 'div.mb-6 > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)')
-# email.send_keys(usernameS2)
-# passwordS = driver.find_element(By.CSS_SELECTOR, 'div.mb-6 > div:nth-child(2) > div:nth-child(2) > input:nth-child(1)')
-# passwordS.send_keys(passwordS2)
-# logIn = driver.find_element(By.CSS_SELECTOR, '.css-125mcs5')
-# logIn.click()
-# driver.switch_to.window(driver.window_handles[0])
+driver.get('https://apps.goshippo.com/login')
+time.sleep(1)
+email = driver.find_element(By.CSS_SELECTOR, 'div.mb-6 > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)')
+email.send_keys(usernameS2)
+passwordS = driver.find_element(By.CSS_SELECTOR, 'div.mb-6 > div:nth-child(2) > div:nth-child(2) > input:nth-child(1)')
+passwordS.send_keys(passwordS2)
+logIn = driver.find_element(By.CSS_SELECTOR, '.css-125mcs5')
+logIn.click()
+driver.switch_to.window(driver.window_handles[0])
+shippoWindow = 1
 
-
-time.sleep(20) #Time to do the captcha
-# driver.switch_to.window(driver.window_handles[0])
-# driver.switch_to.default_content()
+try:
+    captcha = WebDriverWait(driver, 100).until(
+        EC.presence_of_element_located((By.ID, 'userid'))
+    )
+finally:
+    driver.quit
+# Time to do the captcha
+driver.switch_to.window(driver.window_handles[0])
 username = driver.find_element(By.ID,'userid')
 username.send_keys(usernameStr)
 nextButton = driver.find_element(By.NAME,'signin-continue-btn')
 nextButton.click()
-time.sleep(2)
+time.sleep(1)
 password = driver.find_element(By.ID,'pass')
 password.send_keys(passwordStr)
 signIn = driver.find_element(By.ID,'sgnBt')
 signIn.click()
 
+
 # change url to https://www.ebay.com/sh/ord later
 # test: https://www.ebay.com/sh/ord/?filter=status:PAID_SHIPPED
-time.sleep(3)
-driver.get('https://www.ebay.com/sh/ord/?filter=status:PAID_SHIPPED')
+driver.get('https://www.ebay.com/sh/ord')
 elems = driver.find_elements(By.CLASS_NAME,'order-details [href]')
 orders = [elem.get_attribute('href') for elem in elems] 
-print(orders[0])
+
+if len(orders) > 0:
+    print(orders[0])
 
 #driver.find_element(By.ID, 'gh-la').send_keys(Keys.CONTROL + 't')
 driver.execute_script("window.open('');")
+shippoWindow += 1
 driver.switch_to.window(driver.window_handles[1])
 driver.get('https://v2.deftship.com/login')
 usernameD = driver.find_element(By.ID, 'email')
@@ -71,6 +82,7 @@ currentWindow = 1
 for order in orders:
     driver.execute_script('''window.open("http://bings.com","_blank");''')
     driver.switch_to.window(driver.window_handles[currentWindow+1])
+    shippoWindow += 1
     driver.get(order)
     infos = driver.find_elements(By.ID, "-help")
     details = [info.get_attribute("innerText") for info in infos]
@@ -106,8 +118,10 @@ for order in orders:
 
 
     # Enter Shipping Information
-    # newShipment = driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)')
-    # newShipment.click()
+    
+    if len(driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)'))>0:
+        newShipment = driver.find_element(By.CSS_SELECTOR, 'div.justify-center:nth-child(2) > button:nth-child(2)')
+        newShipment.click()
     shipName = driver.find_element(By.CSS_SELECTOR,'#receiver-name > div > div > div.flex.flex-grow.items-stretch.focus-within\:z-10 > input')
     shipName.send_keys(name)
     shipAttention = driver.find_element(By.ID, 'attention')
@@ -125,9 +139,6 @@ for order in orders:
     shipZip = driver.find_element(By.ID, 'zip')
     zip = zip[:5]
     shipZip.send_keys(zip)
-    shipState = driver.find_element(By.XPATH, '//*[@id="main-wrapper"]/main/div/form/div/div[2]/div[2]/div[2]/div/div[10]/div/div/div')
-    # shipState.click()
-    # shipState.send_keys(state + u'\ue007')
     time.sleep(2)
     shipCity = driver.find_element(By.CSS_SELECTOR, '#city')
     shipCity.clear()
@@ -188,11 +199,8 @@ for order in orders:
             newPackage = driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/main/div/form/div/div[2]/div[3]/div[2]/div[2]/div/a')
             newPackage.click()
     driver.switch_to.window(driver.window_handles[currentWindow+1])
-    ActionChains(driver).key_down(Keys.CONTROL).send_keys('w').key_up(Keys.CONTROL).perform()
     currentWindow += 1
-    ActionChains(driver).key_down(Keys.CONTROL).send_keys('t').key_up(Keys.CONTROL).perform()
-    driver.switch_to.window(driver.window_handles[currentWindow])
-    driver.get('https://v2.deftship.com/login')
-time.sleep(100000)
-    # getQuotes = driver.find_element(By.XPATH,'/html/body/div[1]/div/div[2]/main/div/form/div/div[2]/div[4]/div/button')
-#div.copy-item:nth-child(4) > dd:nth-child(2) > span:nth-child(1) > span:nth-child(1) > div:nth-child(1) > button:nth-child(1)
+    if order != orders[len(orders)-1]:
+        driver.switch_to.window(driver.window_handles[currentWindow])
+        driver.get('https://v2.deftship.com/login')
+time.sleep(10800)

@@ -34,4 +34,3 @@ for newAB in newABs:
         if( item[5][len(item[5])-1:] == '\n'):
             item[5] = item[5][:len(item[5])-1]
     ABpackages.append(item)
-print(ABpackages)
