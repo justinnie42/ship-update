@@ -6426,3 +6426,98 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 
 ###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
 
+1654189207316	geckodriver	INFO	Listening on 127.0.0.1:49623
+1654189210397	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49624" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilep7kV74"
+1654189210829	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49624
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofilep7kV74\\search.json.mozlz4", (void 0)))
+1654189213283	Marionette	INFO	Listening on port 49650
+Read port: 49650
+1654189213353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49624/devtools/browser/35504f02-e1e6-4190-9bc6-6f69f4490ff3
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://src.ebay-us.com/KoXXB_LF8Y52_67t?e1aef0decf21c156=eMPEP8ycN3PzehOI1KDRqyr6FibBneBCOiqXBz-5aYDazv4Kz_Anupi7qGFQ3UNWBFYpet70iCmLAz8f6HeVm17XOUfnmzLZT2jFGsGEQY7tQ0MfhoDoLZSBmCHdh383j1-T-S94xrVYzn9_RpAMAgDS9FzliVmj2-fJJZXan5dVc5zL4r5CXavC4H0geHwjyE-QDzM4eTgW0gGdtH9szuo&jb=343126246a736d773d5f696e646d7573246a716f3f57696e666d75712730323932266a7162753f44697a65666f7a246a71623f466b7265666d7a273032333239, line 880: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654189220462	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://src.ebay-us.com/KoXXB_LF8Y52_67t?e1aef0decf21c156=eMPEP8ycN3PzehOI1KDRqyr6FibBneBCOiqXBz-5aYDazv4Kz_Anupi7qGFQ3UNWBFYpet70iCmLAz8f6HeVm17XOUfnmzLZT2jFGsGEQY7tQ0MfhoDoLZSBmCHdh383j1-T-S94xrVYzn9_RpAMAgDS9FzliVmj2-fJJZXan5dVc5zL4r5CXavC4H0geHwjyE-QDzM4eTgW0gGdtH9szuo&jb=343126246a736d773d5f696e646d7573246a716f3f57696e666d75712730323932266a7162753f44697a65666f7a246a71623f466b7265666d7a273032333239, line 880: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654189246701	Marionette	INFO	Stopped listening on port 49650
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Msg_DestroyBrowsingContextGroup) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+1654189256693	geckodriver	INFO	Listening on 127.0.0.1:49835
+1654189259757	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49836" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileVjNwRI"
+1654189260166	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49836
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\User\\AppData\\Local\\Temp\\rust_mozprofileVjNwRI\\search.json.mozlz4", (void 0)))
+1654189262572	Marionette	INFO	Listening on port 49862
+Read port: 49862
+1654189262695	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49836/devtools/browser/b9783272-e1d4-4c87-9453-4f27df7c7f43
+JavaScript warning: https://c.paypal.com/da/r/efbv3.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://adf0901f1861.cdn4.forter.com/sn/adf0901f1861/sha256-aPvRLYGFyaXJHBxFlpFDAGdBiC1D5A7w925KKSssW%2Bo%3D/script.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://ir.ebaystatic.com/cr/v/c1/aW5ob3VzZWpzMTY0ODcxMTc3Njc3MQ==-1.0.0.min.js, line 1: WebGL context was lost.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://apps.goshippo.com"
+JavaScript warning: https://src.ebay-us.com/zd2IXHL66OtF4E76?6d0b1e08a402cefe=YErQWtdj5Yz_8xRNqsX3NbwIJF43uiG2VLksg6B2enfIUXcb_72elnddp2EL8bijhllPrY4ULPnVzt5SrAF83jlb3fYkVM5f23lF0crRp9dxqeO_sRSxl-u0xFQlPkyr-P91HU9pA5TlGcflPwGk8R03O6NUOl1lyxu712dBXculdcYCscioZ2ZznS2CG5ihVdfINjTqLga3r55xm83op2U&jb=343126266a716d773d5f696e646d7773246a736d35556b6e666d75712730383132266a7362773f44697a65666f7a266a71623d44617067666d7a273032333831, line 595: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654189268497	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://src.ebay-us.com/zd2IXHL66OtF4E76?6d0b1e08a402cefe=YErQWtdj5Yz_8xRNqsX3NbwIJF43uiG2VLksg6B2enfIUXcb_72elnddp2EL8bijhllPrY4ULPnVzt5SrAF83jlb3fYkVM5f23lF0crRp9dxqeO_sRSxl-u0xFQlPkyr-P91HU9pA5TlGcflPwGk8R03O6NUOl1lyxu712dBXculdcYCscioZ2ZznS2CG5ihVdfINjTqLga3r55xm83op2U&jb=343126266a716d773d5f696e646d7773246a736d35556b6e666d75712730383132266a7362773f44697a65666f7a266a71623d44617067666d7a273032333831, line 595: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://signin.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.ebay.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://v2.deftship.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1654189347059	Marionette	INFO	Stopped listening on port 49862
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PWebSocket::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PSessionStorageObserver::Msg_Observe) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

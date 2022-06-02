@@ -27,10 +27,20 @@ for product in products:
     if( len(item[5]) > 1):
         if(item[5][len(item[5])-1:] == '\n'):
             item[5] = item[5][:len(item[5])-1]
+    for detail in range(len(item)-1):
+        item[detail] = item[detail].strip()
     sku.append(item)
+print(sku)
 for newAB in newABs:
     item = newAB.split(',')
     if (len(item[5]) > 1):
         if( item[5][len(item[5])-1:] == '\n'):
             item[5] = item[5][:len(item[5])-1]
+    # for dimension in range(len(item)-1):
+    #     if(item[dimension][0] == " "):
+    #         item[dimension] = item[dimension][1:]
+    #     if(item[dimension][len(item[dimension])-1] == " "):
+    #         item[dimension] = item[:len(item[dimension])-1]
+    for detail in range(len(item)-1):
+        item[detail] = item[detail].strip()
     ABpackages.append(item)
