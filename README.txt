@@ -1,5 +1,15 @@
 SHIPPING UPDATER:
 
+HOW TO SETUP:
+1. INSTALL LATEST VERSION OF PYTHON
+2. TYPE py -m pip install selenium
+3. MAKE SURE YOU HAVE FIREFOX INSTALLED
+4. COPY THE deftshipUpdate FOLDER FROM THE FLASHDRIVE INTO THE DESKTOP
+5. DOWNLOAD geckodriver.zip FROM GITHUB
+6. EXTRACT geckodriver.zip TO THE deftshipUpdate FOLDER
+7. DELETE geckodriver.txt (or whichever geckodriver is not geckodriver.exe)
+8. CLICK ON deftshipUpdate.py TO START
+
 USING THE DEFTSHIPUPDATE (UPDATES DEFTSHIP AND SHIPPO)
 1. CLICK ON THE deftshipUpdate FILE
 2. WAIT FOR EBAY AND SHIPPO TO LOAD
