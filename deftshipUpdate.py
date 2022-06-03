@@ -32,7 +32,6 @@ passwordS.send_keys(passwordS2)
 logIn = driver.find_element(By.CSS_SELECTOR, '.css-125mcs5')
 logIn.click()
 driver.switch_to.window(driver.window_handles[0])
-shippoWindow = 1
 
 # Gives 100 seconds to do Captcha, logs in to Ebay after Captcha is complete
 try:
@@ -64,7 +63,6 @@ if len(orders) > 0:
 
 # Log in to Deftship
 driver.execute_script("window.open('');")
-shippoWindow += 1
 driver.switch_to.window(driver.window_handles[1])
 driver.get('https://v2.deftship.com/login')
 usernameD = driver.find_element(By.ID, 'email')
@@ -81,7 +79,6 @@ for order in orders:
     # Scrapes buyer information from Ebay
     driver.execute_script('''window.open("http://bings.com","_blank");''')
     driver.switch_to.window(driver.window_handles[currentWindow+1])
-    shippoWindow += 1
     driver.get(order)
     infos = driver.find_elements(By.ID, "-help")
     details = [info.get_attribute("innerText") for info in infos]
@@ -142,7 +139,6 @@ for order in orders:
     shipCity = driver.find_element(By.CSS_SELECTOR, '#city')
     shipCity.clear()
     shipCity.send_keys(city)
-    validate = driver.find_element(By.XPATH, '//*[@id="main-wrapper"]/main/div/form/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/button')
 
     # Enter Package Information
     currentItem = ['','','','','','']
@@ -175,6 +171,7 @@ for order in orders:
         descript.send_keys(currentItem[1])
         skuPackage = driver.find_element(By.ID, 'sku_' + str(i) + '_0')
         skuPackage.send_keys(currentItem[1])
+        
         # Enters information for B package if the package is AB
         if packageB[0] != "":
             i += 1
